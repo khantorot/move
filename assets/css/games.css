@@ -1,0 +1,87 @@
+.games{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game{
+    position: relative;
+    width: 33.333vh;
+    height: 33.333vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.body_w .game{
+    width: 33.333vw;
+    height: 33.333vw;
+}
+
+.game_image{
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game img{
+    width: 80%;
+}
+
+
+.game a{
+    position: relative;
+    font-weight: 600;
+    font-size: 14px;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.game a::before,
+.game a::after{
+    content: attr(data-name);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.game a::after{
+    transform: translateY(100%);
+}
+
+.game a:hover::after{
+    transform: translateY(0%);
+    transition: 0.3s;
+}
+.game a:hover::before{
+    transform: translateY(-100%);
+    transition: 0.3s;
+}
+
+.body_w .game a{
+    overflow: visible;
+    word-break: break-all;
+    font-size: 12px;
+}
+
+.body_w .game a::after{
+    display: none;
+}
+
+.body_w .game a::before{
+    transform: translateY(0);
+}

@@ -1,0 +1,665 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.body_w nav{
+    position: fixed;
+}
+
+.title {
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.body_w .title{
+    position: fixed;
+    top: 50%;
+    transform: translateY(calc(-50% - 33.333vw));
+    width: 100vw;
+    height: 100vw;
+}
+
+.title li {
+    position: relative;
+    width: 33.333%;
+    height: 33.333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title li span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--text);
+}
+.body_w .title li span{
+    font-size: 30vw;
+}
+.title li:nth-child(5) span{
+    font-size: 0;
+}
+
+
+
+.title li:nth-child(1) span:nth-child(1){
+    transform: translate(0%, 100%);
+}
+.title li:nth-child(1) span:nth-child(2){
+    transform: translate(-100%, -100%);
+}
+.title li:nth-child(2) span:nth-child(1){
+    transform: translate(0%, -100%);
+}
+.title li:nth-child(2) span:nth-child(2){
+    transform: translate(0%, 100%);
+}
+.title li:nth-child(2) span:nth-child(3){
+    transform: translate(0%, -100%);
+}
+.title li:nth-child(2) span:nth-child(4){
+    transform: translate(0%, 100%);
+}
+.title li:nth-child(3) span:nth-child(1){
+    transform: translate(0%, 100%);
+}
+.title li:nth-child(3) span:nth-child(2){
+    transform: translate(100%, -100%);
+}
+.title li:nth-child(4) span:nth-child(1){
+    transform: translate(100%, 0%);
+}
+.title li:nth-child(4) span:nth-child(2){
+    transform: translate(100%, 0%);
+}
+.title li:nth-child(5) span::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    height: 80%;
+    border: 2vw solid var(--text);
+    transform: scale(0);
+}
+
+.fade_out_active .title li:nth-child(5) span::after{
+    transform: scale(1);
+    transition: ease-out 0.6s;
+}
+
+.title li:nth-child(6) span:nth-child(1){
+    transform: translate(-100%, 0%);
+}
+.title li:nth-child(6) span:nth-child(2){
+    transform: translate(-100%, 0%);
+}
+.title li:nth-child(6) span:nth-child(3){
+    transform: translate(-100%, 0%);
+}
+.title li:nth-child(7) span:nth-child(1){
+    transform: translate(-100%, 100%);
+}
+.title li:nth-child(7) span:nth-child(2){
+    transform: translate(100%, -100%);
+}
+.title li:nth-child(7) span:nth-child(3){
+    transform: translate(100%, 0%);
+}
+.title li:nth-child(7) span:nth-child(4){
+    transform: translate(-100%, 100%);
+}
+.title li:nth-child(8) span:nth-child(1){
+    transform: translate(0%, -100%);
+}
+.title li:nth-child(8) span:nth-child(2){
+    transform: translate(0%, -100%);
+}
+.title li:nth-child(8) span:nth-child(3){
+    transform: translate(0%, -100%);
+}
+.title li:nth-child(9) span:nth-child(1){
+    transform: translate(-100%, 0%);
+}
+.title li:nth-child(9) span:nth-child(2){
+    transform: translate(-100%, 0%);
+}
+.title li:nth-child(9) span:nth-child(3){
+    transform: translate(100%, 100%);
+}
+
+.show_title li:nth-child(1) span:nth-child(1) {
+    animation: title11 8s infinite;
+}
+.show_title li:nth-child(1) span:nth-child(2) {
+    animation: title12 8s infinite;
+}
+.show_title li:nth-child(2) span:nth-child(1) {
+    animation: title21 8s infinite;
+}
+.show_title li:nth-child(2) span:nth-child(2) {
+    animation: title22 8s infinite;
+}
+.show_title li:nth-child(2) span:nth-child(3) {
+    animation: title23 8s infinite;
+}
+.show_title li:nth-child(2) span:nth-child(4) {
+    animation: title24 8s infinite;
+}
+.show_title li:nth-child(3) span:nth-child(1) {
+    animation: title31 8s infinite;
+}
+.show_title li:nth-child(3) span:nth-child(2) {
+    animation: title32 8s infinite;
+}
+.show_title li:nth-child(4) span:nth-child(1) {
+    animation: title41 8s infinite;
+}
+.show_title li:nth-child(4) span:nth-child(2) {
+    animation: title42 8s infinite;
+}
+.show_title li:nth-child(5) span::after{
+    animation: title5 8s infinite;
+}
+.show_title li:nth-child(6) span:nth-child(1) {
+    animation: title61 8s infinite;
+}
+.show_title li:nth-child(6) span:nth-child(2) {
+    animation: title62 8s infinite;
+}
+.show_title li:nth-child(6) span:nth-child(3) {
+    animation: title63 8s infinite;
+}
+.show_title li:nth-child(7) span:nth-child(1) {
+    animation: title71 8s infinite;
+}
+.show_title li:nth-child(7) span:nth-child(2) {
+    animation: title72 8s infinite;
+}
+.show_title li:nth-child(7) span:nth-child(3) {
+    animation: title73 8s infinite;
+}
+.show_title li:nth-child(7) span:nth-child(4) {
+    animation: title74 8s infinite;
+}
+.show_title li:nth-child(8) span:nth-child(1) {
+    animation: title81 8s infinite;
+}
+.show_title li:nth-child(8) span:nth-child(2) {
+    animation: title82 8s infinite;
+}
+.show_title li:nth-child(8) span:nth-child(3) {
+    animation: title83 8s infinite;
+}
+.show_title li:nth-child(9) span:nth-child(1) {
+    animation: title91 8s infinite;
+}
+.show_title li:nth-child(9) span:nth-child(2) {
+    animation: title92 8s infinite;
+}
+.show_title li:nth-child(9) span:nth-child(3) {
+    animation: title93 8s infinite;
+}
+
+@keyframes title11{
+    0%{transform: translate(0%, 100%)}
+    10%{transform: translate(0%, 100%)}
+    20%{transform: translate(0%, 100%)}
+    30%{transform: translate(0%, 0%)}
+    40%{transform: translate(100%, -100%)}
+    50%{transform: translate(100%, -100%)}
+    60%{transform: translate(100%, -100%)}
+    70%{transform: translate(100%, -100%)}
+    80%{transform: translate(100%, -100%)}
+    90%{transform: translate(100%, -100%)}
+    100%{transform: translate(100%, -100%)}
+}
+@keyframes title12{
+    0%{transform: translate(-100%, -100%)}
+    10%{transform: translate(-100%, -100%)}
+    20%{transform: translate(-100%, -100%)}
+    30%{transform: translate(-100%, -100%)}
+    40%{transform: translate(-100%, -100%)}
+    50%{transform: translate(-100%, -100%)}
+    60%{transform: translate(-100%, -100%)}
+    70%{transform: translate(-100%, -100%)}
+    80%{transform: translate(-100%, -100%)}
+    90%{transform: translate(0%, 0%)}
+    100%{transform: translate(100%, 0%)}
+}
+@keyframes title21{
+    0%{transform: translate(0%, -100%)}
+    10%{transform: translate(0%, 0%)}
+    20%{transform: translate(0%, 100%)}
+    30%{transform: translate(0%, 100%)}
+    40%{transform: translate(0%, 100%)}
+    50%{transform: translate(0%, 100%)}
+    60%{transform: translate(0%, 100%)}
+    70%{transform: translate(0%, 100%)}
+    80%{transform: translate(0%, 100%)}
+    90%{transform: translate(0%, 100%)}
+    100%{transform: translate(0%, 100%)}
+}
+@keyframes title22{
+    0%{transform: translate(0%, 100%)}
+    10%{transform: translate(0%, 100%)}
+    20%{transform: translate(0%, 100%)}
+    30%{transform: translate(0%, 100%)}
+    40%{transform: translate(0%, 100%)}
+    50%{transform: translate(0%, 0%)}
+    60%{transform: translate(0%, -100%)}
+    70%{transform: translate(0%, -100%)}
+    80%{transform: translate(0%, -100%)}
+    90%{transform: translate(0%, -100%)}
+    100%{transform: translate(0%, -100%)}
+}
+@keyframes title23{
+    0%{transform: translate(0%, -100%)}
+    10%{transform: translate(0%, -100%)}
+    20%{transform: translate(0%, -100%)}
+    30%{transform: translate(0%, -100%)}
+    40%{transform: translate(0%, -100%)}
+    50%{transform: translate(0%, -100%)}
+    60%{transform: translate(0%, -100%)}
+    70%{transform: translate(0%, 0%)}
+    80%{transform: translate(0%, 100%)}
+    90%{transform: translate(0%, 100%)}
+    100%{transform: translate(0%, 100%)}
+}
+@keyframes title24{
+    0%{transform: translate(0%, 100%)}
+    10%{transform: translate(0%, 100%)}
+    20%{transform: translate(0%, 100%)}
+    30%{transform: translate(0%, 100%)}
+    40%{transform: translate(0%, 100%)}
+    50%{transform: translate(0%, 100%)}
+    60%{transform: translate(0%, 100%)}
+    70%{transform: translate(0%, 100%)}
+    80%{transform: translate(0%, 100%)}
+    90%{transform: translate(0%, 0%)}
+    100%{transform: translate(100%, 0%)}
+}
+@keyframes title31{
+    0%{transform: translate(0%, 100%)}
+    10%{transform: translate(0%, 0%)}
+    20%{transform: translate(-100%, 0%)}
+    30%{transform: translate(-100%, 0%)}
+    40%{transform: translate(-100%, 0%)}
+    50%{transform: translate(-100%, 0%)}
+    60%{transform: translate(-100%, 0%)}
+    70%{transform: translate(-100%, 0%)}
+    80%{transform: translate(-100%, 0%)}
+    90%{transform: translate(-100%, 0%)}
+    100%{transform: translate(-100%, 0%)}
+}
+@keyframes title32{
+    0%{transform: translate(100%, -100%)}
+    10%{transform: translate(100%, -100%)}
+    20%{transform: translate(100%, -100%)}
+    30%{transform: translate(100%, -100%)}
+    40%{transform: translate(100%, -100%)}
+    50%{transform: translate(100%, -100%)}
+    60%{transform: translate(100%, -100%)}
+    70%{transform: translate(100%, -100%)}
+    80%{transform: translate(100%, -100%)}
+    90%{transform: translate(0%, 0%)}
+    100%{transform: translate(0%, 100%)}
+}
+@keyframes title41{
+    0%{transform: translate(100%, 0%)}
+    10%{transform: translate(100%, 0%)}
+    20%{transform: translate(100%, 0%)}
+    30%{transform: translate(0%, 0%)}
+    40%{transform: translate(100%, -100%)}
+    50%{transform: translate(100%, -100%)}
+    60%{transform: translate(100%, -100%)}
+    70%{transform: translate(100%, -100%)}
+    80%{transform: translate(100%, -100%)}
+    90%{transform: translate(100%, -100%)}
+    100%{transform: translate(100%, -100%)}
+}
+@keyframes title42{
+    0%{transform: translate(100%, 0%)}
+    10%{transform: translate(100%, 0%)}
+    20%{transform: translate(100%, 0%)}
+    30%{transform: translate(100%, 0%)}
+    40%{transform: translate(100%, 0%)}
+    50%{transform: translate(100%, 0%)}
+    60%{transform: translate(100%, 0%)}
+    70%{transform: translate(100%, 0%)}
+    80%{transform: translate(100%, 0%)}
+    90%{transform: translate(0%, 0%)}
+    100%{transform: translate(0%, -100%)}
+}
+@keyframes title5{
+    0%{
+        transform: scale(1) rotate(0) translate(0);
+        border-radius: 0%;
+    }
+    10%{
+        transform: scale(1) rotate(90deg) translate(0);
+        border-radius: 0%;
+    }
+    20%{
+        transform: scale(1) rotate(-90deg) translate(0);
+        border-radius: 50%;
+    }
+    30%{
+        transform: scale(1) rotate(0) translate(-50%, 50%);
+        border-radius: 50%;
+    }
+    40%{
+        transform: scale(1) rotate(0) translate(50%, -50%);
+        border-radius: 50%;
+    }
+    50%{
+        transform: scale(0.2) rotate(0) translate(0);
+        border-radius: 50%;
+    }
+    60%{
+        transform: scale(1) rotate(0) translate(0);
+        border-radius: 50%;
+    }
+    70%{
+        transform: scale(0.5) rotate(-180deg) translate(0);
+        border-radius: 0%;
+    }
+    80%{
+        transform: scale(1.5) rotate(0) translate(0);
+        border-radius: 0%;
+    }
+    90%{
+        transform: scale(1) rotate(0) translate(0);
+        border-radius: 0%;
+    }
+    100%{
+        transform: scale(1) rotate(90deg) translate(0);
+        border-radius: 0%;
+    }
+}
+@keyframes title61{
+    0%{transform: translate(-100%, 0%)}
+    10%{transform: translate(0%, 0%)}
+    20%{transform: translate(0%, -100%)}
+    30%{transform: translate(0%, -100%)}
+    40%{transform: translate(0%, -100%)}
+    50%{transform: translate(0%, -100%)}
+    60%{transform: translate(0%, -100%)}
+    70%{transform: translate(0%, -100%)}
+    80%{transform: translate(0%, -100%)}
+    90%{transform: translate(0%, -100%)}
+    100%{transform: translate(0%, -100%)}
+}
+@keyframes title62{
+    0%{transform: translate(-100%, 0%)}
+    10%{transform: translate(-100%, 0%)}
+    20%{transform: translate(-100%, 0%)}
+    30%{transform: translate(-100%, 0%)}
+    40%{transform: translate(-100%, 0%)}
+    50%{transform: translate(0%, 0%)}
+    60%{transform: translate(100%, 0%)}
+    70%{transform: translate(100%, 0%)}
+    80%{transform: translate(100%, 0%)}
+    90%{transform: translate(100%, 0%)}
+    100%{transform: translate(100%, 0%)}
+}
+@keyframes title63{
+    0%{transform: translate(-100%, 0%)}
+    10%{transform: translate(-100%, 0%)}
+    20%{transform: translate(-100%, 0%)}
+    30%{transform: translate(-100%, 0%)}
+    40%{transform: translate(-100%, 0%)}
+    50%{transform: translate(-100%, 0%)}
+    60%{transform: translate(-100%, 0%)}
+    70%{transform: translate(-100%, 0%)}
+    80%{transform: translate(-100%, 0%)}
+    90%{transform: translate(0%, 0%)}
+    100%{transform: translate(100%, 0%)}
+}
+@keyframes title71{
+    0%{transform: translate(-100%, 100%)}
+    10%{transform: translate(-100%, 100%)}
+    20%{transform: translate(-100%, 100%)}
+    30%{transform: translate(0%, 0%)}
+    40%{transform: translate(100%, -100%)}
+    50%{transform: translate(100%, -100%)}
+    60%{transform: translate(100%, -100%)}
+    70%{transform: translate(100%, -100%)}
+    80%{transform: translate(100%, -100%)}
+    90%{transform: translate(100%, -100%)}
+    100%{transform: translate(100%, -100%)}
+}
+@keyframes title72{
+    0%{transform: translate(100%, -100%)}
+    10%{transform: translate(100%, -100%)}
+    20%{transform: translate(100%, -100%)}
+    30%{transform: translate(100%, -100%)}
+    40%{transform: translate(100%, -100%)}
+    50%{transform: translate(0%, 0%)}
+    60%{transform: translate(-100%, 100%)}
+    70%{transform: translate(-100%, 100%)}
+    80%{transform: translate(-100%, 100%)}
+    90%{transform: translate(-100%, 100%)}
+    100%{transform: translate(-100%, 100%)}
+}
+@keyframes title73{
+    0%{transform: translate(100%, 0%)}
+    10%{transform: translate(100%, 0%)}
+    20%{transform: translate(100%, 0%)}
+    30%{transform: translate(100%, 0%)}
+    40%{transform: translate(100%, 0%)}
+    50%{transform: translate(100%, 0%)}
+    60%{transform: translate(100%, 0%)}
+    70%{transform: translate(0%, 0%)}
+    80%{transform: translate(0%, -100%)}
+    90%{transform: translate(0%, -100%)}
+    100%{transform: translate(0%, -100%)}
+}
+@keyframes title74{
+    0%{transform: translate(-100%, 100%)}
+    10%{transform: translate(-100%, 100%)}
+    20%{transform: translate(-100%, 100%)}
+    30%{transform: translate(-100%, 100%)}
+    40%{transform: translate(-100%, 100%)}
+    50%{transform: translate(-100%, 100%)}
+    60%{transform: translate(-100%, 100%)}
+    70%{transform: translate(-100%, 100%)}
+    80%{transform: translate(-100%, 100%)}
+    90%{transform: translate(0%, 0%)}
+    100%{transform: translate(0%, -100%)}
+}
+@keyframes title81{
+    0%{transform: translate(0%, -100%)}
+    10%{transform: translate(0%, -100%)}
+    20%{transform: translate(0%, -100%)}
+    30%{transform: translate(0%, 0%)}
+    40%{transform: translate(100%, -100%)}
+    50%{transform: translate(100%, -100%)}
+    60%{transform: translate(100%, -100%)}
+    70%{transform: translate(100%, -100%)}
+    80%{transform: translate(100%, -100%)}
+    90%{transform: translate(100%, -100%)}
+    100%{transform: translate(100%, -100%)}
+}
+@keyframes title82{
+    0%{transform: translate(0%, -100%)}
+    10%{transform: translate(0%, -100%)}
+    20%{transform: translate(0%, -100%)}
+    30%{transform: translate(0%, -100%)}
+    40%{transform: translate(0%, -100%)}
+    50%{transform: translate(0%, -100%)}
+    60%{transform: translate(0%, -100%)}
+    70%{transform: translate(0%, 0%)}
+    80%{transform: translate(0%, 100%)}
+    90%{transform: translate(0%, 100%)}
+    100%{transform: translate(0%, 100%)}
+}
+@keyframes title83{
+    0%{transform: translate(0%, -100%)}
+    10%{transform: translate(0%, -100%)}
+    20%{transform: translate(0%, -100%)}
+    30%{transform: translate(0%, -100%)}
+    40%{transform: translate(0%, -100%)}
+    50%{transform: translate(0%, -100%)}
+    60%{transform: translate(0%, -100%)}
+    70%{transform: translate(0%, -100%)}
+    80%{transform: translate(0%, -100%)}
+    90%{transform: translate(0%, 0%)}
+    100%{transform: translate(-100%, 0%)}
+}
+@keyframes title91{
+    0%{transform: translate(-100%, 0%)}
+    10%{transform: translate(-100%, 0%)}
+    20%{transform: translate(-100%, 0%)}
+    30%{transform: translate(0%, 0%)}
+    40%{transform: translate(100%, -100%)}
+    50%{transform: translate(100%, -100%)}
+    60%{transform: translate(100%, -100%)}
+    70%{transform: translate(100%, -100%)}
+    80%{transform: translate(100%, -100%)}
+    90%{transform: translate(100%, -100%)}
+    100%{transform: translate(100%, -100%)}
+}
+@keyframes title92{
+    0%{transform: translate(-100%, 0%)}
+    10%{transform: translate(-100%, 0%)}
+    20%{transform: translate(-100%, 0%)}
+    30%{transform: translate(-100%, 0%)}
+    40%{transform: translate(-100%, 0%)}
+    50%{transform: translate(-100%, 0%)}
+    60%{transform: translate(-100%, 0%)}
+    70%{transform: translate(0%, 0%)}
+    80%{transform: translate(0%, -100%)}
+    90%{transform: translate(0%, -100%)}
+    100%{transform: translate(0%, -100%)}
+}
+@keyframes title93{
+    0%{transform: translate(100%, 100%)}
+    10%{transform: translate(100%, 100%)}
+    20%{transform: translate(100%, 100%)}
+    30%{transform: translate(100%, 100%)}
+    40%{transform: translate(100%, 100%)}
+    50%{transform: translate(100%, 100%)}
+    60%{transform: translate(100%, 100%)}
+    70%{transform: translate(100%, 100%)}
+    80%{transform: translate(100%, 100%)}
+    90%{transform: translate(0%, 0%)}
+    100%{transform: translate(-100%, 0%)}
+}
+
+
+
+
+
+
+
+
+
+
+.video_btn {
+    --clip-path: circle(0px at left);
+    --clip-path-hover: circle(8vh at left);
+    --clip-path-clicked: circle(100vw at left);
+    --duration: 0.8s;
+    --timing-function: ease-in;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 2;
+}
+
+
+.body_w .video_btn{
+    --clip-path: circle(0px at left);
+    --clip-path-hover: circle(0vw at left);
+    --clip-path-clicked: circle(100vh at left);
+}
+
+.video_btn .video {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+}
+
+
+.video_btn .video video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    transition: opacity 1s;
+}
+
+
+.video_btn input {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 33.333vh;
+    width: 33.333vh;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    appearance: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+      appearance: none;
+      outline: none;
+      border: none;
+}
+
+
+.body_w .video_btn input{
+    width: 33.333vw;
+    height: 33.333vw;
+}
+
+.video_btn input:focus {
+    outline: 0;
+}
+
+.video_btn input:hover~.video {
+    clip-path: var(--clip-path-hover);
+}
+
+.video_btn input:checked {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+.video_btn input:checked~.video {
+    clip-path: var(--clip-path-clicked);
+}
+
+.video_btn input:checked~.video video{
+    opacity: 0.1;
+}
+
+.video_btn input:checked~.text>span::after {
+    clip-path: var(--clip-path-clicked);
+}

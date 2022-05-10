@@ -1,0 +1,18 @@
+.works_elems{
+    list-style-type: square;
+    margin-left: 20px;
+    margin-top: 80px;
+}
+
+.works_elems li{
+    margin-bottom: 50px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.works_elems li a{
+    margin-left: 10px;
+    text-decoration: underline;
+    position: relative;
+    z-index: 2;
+}

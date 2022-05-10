@@ -1,0 +1,18 @@
+.jobs ul{
+    list-style-type: square;
+    margin: 10px 0 50px 20px;
+}
+
+.jobs li{
+    line-height: 30px;
+}
+
+.jobs li a{
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+}
+
+.jobs li a:hover{
+    text-decoration: underline;
+}

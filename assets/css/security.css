@@ -1,0 +1,29 @@
+.security{
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.security h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.security p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.security p a{
+    text-decoration: underline;
+}
+
+
+.security ul{
+    margin-top: 20px;
+    margin-left: 20px;
+    list-style-type: square;
+    line-height: 30px;
+}

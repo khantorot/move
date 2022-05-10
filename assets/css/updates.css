@@ -1,0 +1,36 @@
+.update{
+    margin-bottom: 200px;
+}
+
+.updates ul{
+    margin: 30px 0;
+    list-style-type: square;
+}
+
+.updates ul li{
+    line-height: 30px;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.panel{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.panel_elem{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid var(--line);
+    font-size: 14px;
+    text-transform:  uppercase;
+}
+
+
+.panel_elem:hover{
+    background: var(--line);
+}
