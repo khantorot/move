@@ -1,0 +1,81 @@
+.form{
+    position: relative;
+    z-index: 1;
+}
+
+.form ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form ul li{
+    padding: 0;
+    width: 99.9vh;
+}
+
+.body_w .form ul li{
+    width: 100%;
+}
+
+.form ul input{
+    width: 99%;
+    background: transparent;
+    border: 0;
+    font-weight: 600;
+    color: var(--text);
+    text-align: right;
+}
+
+.form ul li:nth-child(1) input{
+    font-size: 34vh;
+}
+.form ul li:nth-child(2) input{
+    font-size: 12.2vh;
+}
+
+.body_w .form ul li:nth-child(1) input{
+    font-size: 33vw;
+    width: 98%;
+}
+
+.body_w .form ul li:nth-child(2) input{
+    font-size: 12vw;
+    width: 98%;
+}
+
+.body_w .form ul input{
+    font-size: 12px;
+}
+
+.form ul input::placeholder{
+    color: var(--text);
+}
+
+.form ul button{
+    background: transparent;
+    border: 0;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.form ul button:hover{
+    text-decoration: underline;
+}
+
+
+.link[data-name="send"]{
+    font-size: 37vh;
+    height: 37vh;
+    width: 99.9vh;
+}
+
+.link[data-name="send"]:hover::after,
+.link[data-name="send"]:hover::before{
+    transition: 0.8s;
+}
+
+.body_w .link[data-name="send"]{
+    font-size: 36vw;
+    height: 36vw;
+    width: 100%;
+}
